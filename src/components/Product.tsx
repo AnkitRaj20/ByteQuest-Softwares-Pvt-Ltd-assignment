@@ -1,14 +1,11 @@
 "use client";
 import { Bookmark,ShoppingBag } from "lucide-react";
 
-// import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+  CardHeader
 } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -22,8 +19,6 @@ export default function Product({ className, ...props }: CardProps) {
 
   const getProduct = async () => {
     const data = await axios.get("https://fakestoreapi.com/products");
-    // setData(data.data);
-    console.log(data.data);
     setData(data.data);
   };
 
@@ -36,7 +31,6 @@ export default function Product({ className, ...props }: CardProps) {
       {data.map((product: any) => (
         <Card
           key={product.id}
-          //   className={cn("w-[380px]", className)}
           className="rounded-lg bg-black"
           {...props}
         >

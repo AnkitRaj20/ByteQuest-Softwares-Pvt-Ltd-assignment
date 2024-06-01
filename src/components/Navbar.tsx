@@ -1,16 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React, { useEffect } from "react";
-import Link from "next/link";
-import Image from "next/image";
-// import DarkMode from "@/components/DarkMode";
 
-// DARK MODE
-import { Moon,Sun,Search, User,  Bookmark,ShoppingBag } from "lucide-react";
-
-import { useTheme } from "next-themes";
-
-import { Button } from "@/components/ui/button";
+import {Search, User,  Bookmark,ShoppingBag } from "lucide-react";
 
 
 const Page = () => {
